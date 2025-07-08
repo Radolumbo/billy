@@ -3,3 +3,4 @@ venv/
 *.rest
 __pycache__/
 *.pyc
+scratch/
