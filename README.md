@@ -2,6 +2,8 @@
 
 Hi, I'm Billy! I understand bills using AI 'cause ain't nobody got time to read all that.
 
+This currently uses the [Congress API](https://api.congress.gov/) to get bill text and the [Gemini API](http://aistudio.google.com/) to answer questions about the bill.
+
 ## Local Environment Setup
 
 1. Install VS Code/Cursor extensions:
