@@ -5,9 +5,7 @@ from .routers.bill import router as bill_router
 
 load_dotenv()
 
-app = FastAPI(
-    title="Billy", description="AI-powered legislation understanding", version="0.1.0"
-)
+app = FastAPI(title="Billy", description="AI-powered legislation understanding", version="0.1.0")
 
 app.include_router(bill_router)
 
@@ -17,7 +15,7 @@ async def root() -> Response:
     return Response(content="Hello world, it's me, Billy!")
 
 
-@app.get("/health")
+@app.get("/healthz")
 async def health() -> Response:
     return Response(content="healthy")
 
